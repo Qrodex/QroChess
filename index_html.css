@@ -2,7 +2,7 @@ a { color:#5D5D9E; }
 a:visited { color:#5D5D9E; } 
 a:active { color:#5C615E; } 
 a:hover { color:#B2B3B4; } 
-body { background-color:#1D1D1D; padding:0;  margin: 0; }
+body { background-color:#1D1D1D; padding:0;  margin: 0; user-select: none; }
 .textstyle1 { text-align:left; }
 #container_2ccd4f1f { vertical-align: top; position:relative; display: inline-block; width:100%; background-color:#2D2D2D;  }
 #container_5b736143 { vertical-align: top; position:relative; display: inline-block; width:100%; background:none;  }
