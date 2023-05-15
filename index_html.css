@@ -17,7 +17,7 @@ body { background-color:#1D1D1D; padding:0;  margin: 0; }
 #container_2aa5a736_padding { margin: 15px; display: block;  }
 .textstyle4 { font-size:12pt; font-family:torus, Helvetica, sans-serif; color:#FFFFFF;  }
 #container_e4bf9ac { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; background:none;  }
-#container_49364a9 {vertical-align: top;position:relative;display: inline-block;width:20%;background: #2d2d2d;height: 100vh;}
+#container_49364a9 {vertical-align: top;position:relative;display: inline-block;width:20%;background: #2d2d2d;min-height: 100vh;}
 #container_49364a9_padding { margin: 15px; display: block;  }
 #container_406a1ed8 {vertical-align: top;border-radius: 9px;position:relative;display: inline-block;width:100%;background-color: #1d1d1d;}
 #container_406a1ed8_padding { margin: 10px; display: block;  }
