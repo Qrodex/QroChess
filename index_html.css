@@ -17,19 +17,19 @@ body { background-color:#1D1D1D; padding:0;  margin: 0; }
 #container_2aa5a736_padding { margin: 15px; display: block;  }
 .textstyle4 { font-size:12pt; font-family:torus, Helvetica, sans-serif; color:#FFFFFF;  }
 #container_e4bf9ac { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; background:none;  }
-#container_49364a9 { vertical-align: top; position:relative; display: inline-block; width:20%; background:none;  }
+#container_49364a9 {vertical-align: top;position:relative;display: inline-block;width:20%;background: #2d2d2d;height: 100vh;}
 #container_49364a9_padding { margin: 15px; display: block;  }
-#container_406a1ed8 { vertical-align: top; border-radius: 9px; position:relative; display: inline-block; width:100%; background-color:#2D2D2D;  }
+#container_406a1ed8 {vertical-align: top;border-radius: 9px;position:relative;display: inline-block;width:100%;background-color: #1d1d1d;}
 #container_406a1ed8_padding { margin: 10px; display: block;  }
 .textstyle5 { font-size:12pt; font-family:torus, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold;  }
-#container_6a5612c4 { vertical-align: top; border-radius: 9px; position:relative; display: inline-block; width:100%; min-height:150px; background-color:#2D2D2D;  }
+#container_6a5612c4 {vertical-align: top;border-radius: 9px;position:relative;display: inline-block;width:100%;min-height:150px;background-color: #1d1d1d;}
 #container_6a5612c4_padding { margin: 10px; display: block;  }
 .textstyle6 { font-size:12pt; font-family:torus, Helvetica, sans-serif; color:#000000;  }
-#container_23932c22 { vertical-align: top; border-radius: 9px; position:relative; display: inline-block; width:100%; background-color:#2D2D2D;  }
+#container_23932c22 {vertical-align: top;border-radius: 9px;position:relative;display: inline-block;width:100%;background-color: #1d1d1d;}
 #container_23932c22_padding { margin: 10px; display: block;  }
 #container_46617e6a { vertical-align: top; position:relative; display: inline-block; width:80%; background:none;  }
 #container_46617e6a_padding { margin: 15px; display: block;  }
-#container_27ce7d7c { vertical-align: top; border-radius: 9px; position:relative; display: inline-block; width:100%; min-height:150px; background-color:#4D4D4D;  }
+#container_27ce7d7c {vertical-align: top;border-radius: 9px;position:relative;display: inline-block;width:100%;min-height:150px;background-color: #2d2d2d;}
 #container_27ce7d7c_padding { margin: 10px; display: block;  }
 @media only screen and (max-width: 600px)
 {
