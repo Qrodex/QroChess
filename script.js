@@ -1,6 +1,7 @@
 var board = null
 var game = new Chess()
 var log = document.getElementById('logDiv')
+var placesound = new Audio('351518__mh2o__chess_move_on_alabaster.wav')
 
 function createLog(message) {
     let text = document.createElement('p');
@@ -20,6 +21,7 @@ function makeRandomMove() {
     var randomIdx = Math.floor(Math.random() * possibleMoves.length)
     game.move(possibleMoves[randomIdx])
     board.position(game.fen())
+    placesound.play()
 }
 
 function onDrop(source, target) {
@@ -36,6 +38,7 @@ function onDrop(source, target) {
         return 'snapback'
     }
     window.setTimeout(makeRandomMove, 250)
+    placesound.play()
 }
 
 function onSnapEnd() {
