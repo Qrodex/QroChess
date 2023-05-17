@@ -97,13 +97,13 @@ function stopWatch() {
         if (count < 10) {
             countString = "0" + countString;
         }
+        
+        document.getElementById('hr').innerHTML = hrString;
+        document.getElementById('min').innerHTML = minString;
+        document.getElementById('sec').innerHTML = secString;
+        document.getElementById('count').innerHTML = countString;
+        setTimeout(stopWatch, 10);
     }
-
-    document.getElementById('hr').innerHTML = hrString;
-    document.getElementById('min').innerHTML = minString;
-    document.getElementById('sec').innerHTML = secString;
-    document.getElementById('count').innerHTML = countString;
-    setTimeout(stopWatch, 10);
 
     if (game.game_over() == true) {
         alert("Checkmate!");
