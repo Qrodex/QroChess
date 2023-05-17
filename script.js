@@ -50,6 +50,7 @@ var config = {
     onSnapEnd: onSnapEnd
 }
 board = Chessboard('Board', config)
+$(window).resize(board.resize)
 
 let hour = 00;
 let minute = 00;
@@ -96,14 +97,23 @@ function stopWatch() {
         if (count < 10) {
             countString = "0" + countString;
         }
-
-        document.getElementById('hr').innerHTML = hrString;
-        document.getElementById('min').innerHTML = minString;
-        document.getElementById('sec').innerHTML = secString;
-        document.getElementById('count').innerHTML = countString;
-        setTimeout(stopWatch, 10);
     }
+
+    document.getElementById('hr').innerHTML = hrString;
+    document.getElementById('min').innerHTML = minString;
+    document.getElementById('sec').innerHTML = secString;
+    document.getElementById('count').innerHTML = countString;
+    setTimeout(stopWatch, 10);
 }
 
 timer = true;
 stopWatch();
+
+if (game.game_over() == true) {
+    alert("Game Over");
+    timer = false;
+    hour = 00;
+    minute = 00;
+    second = 00;
+    count = 00;
+}
