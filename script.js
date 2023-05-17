@@ -104,16 +104,16 @@ function stopWatch() {
     document.getElementById('sec').innerHTML = secString;
     document.getElementById('count').innerHTML = countString;
     setTimeout(stopWatch, 10);
+
+    if (game.game_over() == true) {
+        alert("Checkmate!");
+        timer = false;
+        hour = 00;
+        minute = 00;
+        second = 00;
+        count = 00;
+    }
 }
 
 timer = true;
 stopWatch();
-
-if (game.game_over() == true) {
-    alert("Game Over");
-    timer = false;
-    hour = 00;
-    minute = 00;
-    second = 00;
-    count = 00;
-}
