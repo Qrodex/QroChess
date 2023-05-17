@@ -110,6 +110,7 @@ function stopWatch() {
 
     if (game.game_over() == true) {
         alert("Checkmate!");
+        createLog('Checkmate!');
         timer = false;
     }
 }
