@@ -108,10 +108,6 @@ function stopWatch() {
     if (game.game_over() == true) {
         alert("Checkmate!");
         timer = false;
-        hour = 00;
-        minute = 00;
-        second = 00;
-        count = 00;
     }
 }
 
