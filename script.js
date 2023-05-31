@@ -5,9 +5,11 @@ var placesound = new Audio('351518__mh2o__chess_move_on_alabaster.wav')
 
 function createLog(message) {
     let text = document.createElement('p');
+    let brrskibididopdopdopyesyesyes = document.createElement('br');
     text.innerText = message;
 
     log.prepend(text)
+    log.prepend(brrskibididopdopdopyesyesyes)
 }
 
 function onDragStart(source, piece, position, orientation) {
@@ -111,6 +113,8 @@ function stopWatch() {
     if (game.game_over() == true) {
         alert("Checkmate!");
         createLog('Checkmate!');
+        startConfetti();
+        document.getElementById('stopConfetti').style.display = "block";
         timer = false;
     }
 }

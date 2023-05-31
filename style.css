@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: torus;
+    color: white;
+    user-select: none;
+}
+
+html {
+    background: url('https://source.unsplash.com/1600x900/?chessboard'), #1d1d1d;
+    overflow: hidden;
+}
+
+.sidebarNavigation {
+    padding: 5px;
+    background: #3d3d3d;
+    height: 100vh;
+    box-sizing: border-box;
+    width: 50px;
+    float: left;
+}
+
+.mainContent {
+    width: calc(100vw - 50px);
+    box-sizing: border-box;
+    float: right;
+}
+
+.gameInfo {
+    height: 100vh;
+    background: #2d2d2d;
+    width: 250px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.chessTable {
+    width: calc(100vw - 250px - 50px);
+    box-sizing: border-box;
+    float: right;
+    height: 100vh;
+    display: flex;
+    background: #1d1d1ddd;
+    backdrop-filter: blur(15px);
+}
+
+.qrodexIcon {
+    width: 100%;
+}
+
+#confetti-canvas {
+    position: absolute;
+}
+
+.sidebarNavigation button {
+    background: none;
+    border: none;
+    width: 100%;
+    aspect-ratio: 1/1;
+    font-size: 100%;
+    margin-bottom: 5px;
+}
+
+.sidebarNavigation button i {
+    color: gray;
+}
+
+.sidebarNavigation button:hover i {
+    color: white;
+}
+
+.sidebarNavigation hr {
+    border: gray solid 1px;
+    margin-bottom: 5px;
+}
+
+details {
+    background: #3d3d3d;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.board-b72b1 {
+    border-radius: 5px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4d4d4d;
+    border: 0px none #ffffff;
+    border-radius: 5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5d5d5d;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #4d4d4d;
+}
+
+::-webkit-scrollbar-track {
+    background: #3d3d3d;
+    border: 0px none #ffffff;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #3d3d3d;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #3d3d3d;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
