@@ -1,0 +1,15 @@
+{
+  "name": "QroChess Classic",
+  "short_name": "QroChess",
+  "icons": [
+    {
+      "src": "Qrochess-icon.png",
+      "sizes": "397x397",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#3F4B38",
+  "background_color": "#1d1d1d"
+}
