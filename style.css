@@ -58,7 +58,7 @@ html {
     background: none;
     border: none;
     width: 100%;
-    aspect-ratio: 1/1;
+    height: 40px;
     font-size: 100%;
     margin-bottom: 5px;
 }
