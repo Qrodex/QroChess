@@ -50,14 +50,6 @@ function stopWatch() {
         document.getElementById('count').innerHTML = countString;
         setTimeout(stopWatch, 10);
     }
-
-    if (game.game_over() == true) {
-        alert("Checkmate!");
-        createLog('Checkmate!');
-        startConfetti();
-        document.getElementById('stopConfetti').style.display = "block";
-        timer = false;
-    }
 }
 
 timer = true;
