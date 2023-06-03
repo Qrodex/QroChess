@@ -29,7 +29,7 @@ html {
 .gameInfo {
     height: 100vh;
     background: #2d2d2d;
-    width: 250px;
+    width: 300px;
     float: left;
     padding: 20px;
     box-sizing: border-box;
@@ -45,9 +45,19 @@ html {
     background: #1d1d1ddd;
     backdrop-filter: blur(15px);
 }
+.homeMenu {
+    width: calc(100vw - 300px - 50px);
+    box-sizing: border-box;
+    float: right;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    background: #1d1d1ddd;
+    backdrop-filter: blur(15px);
+}
 
 .qrodexIcon {
-    width: 100%;
+    width: 70%;
 }
 
 #confetti-canvas {
@@ -62,6 +72,7 @@ html {
     font-size: 100%;
     margin-bottom: 5px;
 }
+
 
 .sidebarNavigation button i {
     color: gray;
@@ -85,6 +96,19 @@ details {
 
 .board-b72b1 {
     border-radius: 5px;
+}
+
+.redCircle {
+    padding: 10px;
+    display: inline-block;
+    background-color: #ff0000;
+    border-radius: 50%;
+    width: 13px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 700;
+    height: 13px;
+    color: #fff;
 }
 
 /* scrollbar */
@@ -128,4 +152,27 @@ details {
 
 ::-webkit-scrollbar-corner {
     background: transparent;
+}
+.statsBio {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.leaderboardStats img {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.leaderboardStats {
+    margin-top: 10px;
+}
+.label-gm {
+    padding: 3px;
+    background-color: #ff0000;
+    max-width: fit-content;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 700;
+}
+.elo-rating {
+    font-weight: 200;
 }

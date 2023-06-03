@@ -21,11 +21,11 @@
 
 <body>
 	<div class="sidebarNavigation">
-		<button title="Home">
+		<button title="Home" onclick="window.location.href = '/'">
 			<i class="fa fa-home"></i>
 		</button>
 
-		<button title="Play Chess">
+		<button title="Play Chess" onclick="window.location.href = '/play.html'">
 			<i class="fa-solid fa-chess-knight"></i>
 		</button>
 
@@ -54,7 +54,7 @@
 	</div>
 	<div class="mainContent">
 		<div class="gameInfo">
-			<img src="../rc_images/qrojune.png" class="qrodexIcon">
+			<img src="rc_images/qrochess-logo.svg" class="qrodexIcon">
 
 			<br><br>
 
@@ -97,7 +97,7 @@
 	</div>
 </body>
 
-<script src="script.js" defer></script>
+<script src="game.js" defer></script>
 <script src="timer.js" defer></script>
 
 </html>
