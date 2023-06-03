@@ -37,7 +37,7 @@ html {
 }
 
 .chessTable {
-    width: calc(100vw - 250px - 50px);
+    width: calc(100vw - 300px - 50px);
     box-sizing: border-box;
     float: right;
     height: 100vh;
