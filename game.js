@@ -45,7 +45,7 @@ function onDrop(source, target) {
         createLog('Illegal Move!');
         return 'snapback'
         illegalMoveSound.pause()
-        illegalMoveSound.duration = 0;
+        illegalMoveSound.duration = 0
         illegalMoveSound.play()
     }
     window.setTimeout(makeRandomMove, 250)
