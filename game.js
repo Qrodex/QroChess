@@ -3,6 +3,7 @@ var game = new Chess()
 var log = document.getElementById('logDiv')
 var placesound = new Audio('move-self.mp3')
 var captureSound = new Audio('capture.mp3')
+var illegalMoveSound = new Audio('illegal-move.mp3')
 
 function createLog(message) {
     let text = document.createElement('p');
@@ -41,6 +42,8 @@ function onDrop(source, target) {
     createLog(source + " -> " + target);
 
     if (move === null) {
+        illegalMoveSound.stop()
+        illegalMoveSound.play()
         createLog('Illegal Move!');
         return 'snapback'
     }
