@@ -43,8 +43,8 @@ function onDrop(source, target) {
 
     if (move === null) {
         createLog('Illegal Move!');
-        return 'snapback'
         illegalMoveSound.play()
+        return 'snapback'
     }
     window.setTimeout(makeRandomMove, 250)
     if (game.in_check()) {
