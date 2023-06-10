@@ -59,6 +59,8 @@ function onDrop(source, target) {
         timer = false;
     } else if (game.in_stalemate()) {
         alert("Game drawn by stalemate")
+        startConfetti();
+        document.getElementById('stopConfetti').style.display = "block";
         timer = false
     }
 }
