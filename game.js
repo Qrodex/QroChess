@@ -28,6 +28,19 @@ engine.onmessage = function(event) {
         }
 
         document.getElementById('status').innerText = 'Ready';
+
+        if (game.in_checkmate()) {
+            alert("Checkmate!");
+            startConfetti();
+            document.getElementById('stopConfetti').style.display = "block";
+            timer = false;
+        } else if (game.in_stalemate()) {
+            alert("Game drawn by stalemate")
+            startConfetti();
+            document.getElementById('stopConfetti').style.display = "block";
+            timer = false
+        }
+        
     } else if(line == 'uciok') {
         document.querySelector('.aiBootDialog').style.display = 'none';
         document.getElementById('status').innerText = 'Ready';
