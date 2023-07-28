@@ -7,8 +7,9 @@
 }
 
 html {
-    background: url('https://source.unsplash.com/1600x900/?chessboard'), #1d1d1d;
+    background-image: url('https://source.unsplash.com/1600x900/?chessboard');
     overflow: hidden;
+    background-color: black;
 }
 
 .sidebarNavigation {
