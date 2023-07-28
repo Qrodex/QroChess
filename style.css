@@ -51,9 +51,9 @@ html {
     float: right;
     padding: 20px;
     height: 100vh;
-    display: flex;
     background: #1d1d1ddd;
     backdrop-filter: blur(15px);
+    overflow: auto;
 }
 
 .qrodexIcon {
@@ -92,6 +92,14 @@ details {
     padding: 15px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.botstatus {
+    background: #2d2d2d;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: #3d3d3d solid 1px;
 }
 
 .board-b72b1 {
@@ -175,4 +183,21 @@ details {
 }
 .elo-rating {
     font-weight: 200;
+}
+.aiBootDialog {
+    position: absolute;
+    float: right;
+    width: calc(100vw - 300px - 50px);
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    background: #1d1d1dab;
+    place-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    backdrop-filter: blur(15px);
+}
+.centersection {
+    place-items: center;
+    justify-content: center;
 }

@@ -39,10 +39,6 @@
 
 		<hr>
 
-		<button onclick="window.location.reload()" title="Restart Game">
-			<i class="fa fa-refresh"></i>
-		</button>
-
 		<button onclick="window.location.href = 'https://github.com/qrodex'" title="Qrodex Github">
 			<i class="fa fa-github"></i>
 		</button>
@@ -58,55 +54,67 @@
 
 			<br><br>
 
-			<details open>
-				<summary>Timer</summary>
+			<details>
+				<summary>Notifications</summary>
 
 				<br>
 
-				<span id="hr" class="textstyle4">00</span>
-				:
-				<span id="min" class="textstyle4">00</span>
-				:
-				<span id="sec" class="textstyle4">00</span>
-				:
-				<span id="count" class="textstyle4">00</span>
+				<span>QroChess repo has transferred here.</span>
 			</details>
 
 			<br>
 
 			<details id="logDiv">
-				<summary>Moves</summary>
-			</details>
+				<summary>Friends</summary>
 
-			<br>
-
-			<details open>
-				<summary>About</summary>
 				<br>
 
-				Bot status: <span id="status">Starting...</span>
-
-				<br><br>
-
-				Played by Stockfish AI
-				QroChess v1.0
-
-				<br><br>
-
-				&copy; 2023 Qrodex
-				<br>Unleash The Venom
+				<span>Sadly, you do not have any friends. Thanks for coming!</span>
 			</details>
 
 			<br>
+
+			<details>
+				<summary>FIDE Leaderboard</summary>
+				<br>
+				<div class="leaderboardStats">
+					<img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png" width="50">
+					<div class="statsBio">
+						<span><div class="label-gm">GM</div>&nbsp;A Person</span>
+						<br>
+						<span class="elo-rating">FIDE ELO: 2859</span>
+					</div>
+				</div>
+				<div class="leaderboardStats">
+					<img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png" width="50">
+					<div class="statsBio">
+						<span><div class="label-gm">GM</div>&nbsp;A Kid</span>
+						<br>
+						<span class="elo-rating">FIDE ELO: 2811</span>
+					</div>
+				</div>
+			</details>
 		</div>
-		<div class="chessTable">
-			<div id="Board" style="width: 40vw; margin: auto; border-radius: 9px;"></div>
+		<div class="chessTable centersection">
+			<div>
+				<h1>Select your preferred game mode:</h1>
+
+				<br>
+
+				<div class="botstatus" onclick="window.location.href = 'classicplay.html'">
+					<h2>Classic mode</h2>
+					Play QroChess with the classic AI (Chess.js)
+				</div>
+
+				<br>
+
+				<div class="botstatus" onclick="window.location.href = 'play.html'">
+					<h2>Enhanced mode</h2>
+					Play QroChess with the newly improved AI (Stockfish.js)
+				</div>
+			</div>
 		</div>
-		<div class="aiBootDialog">Starting stockfish...</div>
 	</div>
 </body>
-
-<script src="game.js" defer></script>
-<script src="timer.js" defer></script>
 
 </html>

@@ -1,5 +1,5 @@
 {
-  "name": "QroChess Classic",
+  "name": "QroChess",
   "short_name": "QroChess",
   "icons": [
     {
@@ -10,6 +10,6 @@
   ],
   "start_url": "index.html",
   "display": "standalone",
-  "theme_color": "#3F4B38",
+  "theme_color": "#3d3d3d",
   "background_color": "#1d1d1d"
 }

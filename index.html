@@ -21,11 +21,11 @@
 
 <body>
 	<div class="sidebarNavigation">
-		<button title="Home" onclick="window.location.href = '/QroChess'">
+		<button title="Home" onclick="window.location.href = 'index.html'">
 			<i class="fa fa-home"></i>
 		</button>
 
-		<button title="Play Chess" onclick="window.location.href = 'play.html'">
+		<button title="Play Chess" onclick="window.location.href = 'mode.html'">
 			<i class="fa-solid fa-chess-knight"></i>
 		</button>
 
@@ -96,7 +96,31 @@
 			</details>
 		</div>
 		<div class="homeMenu">
-			<h1>Welcome to QroChess</h1>
+			<h1>Welcome to QroChess!</h1><br>
+			<h3>Latest News (28/07/23)</h3><br>
+
+			<p style="text-align: justify; text-justify: inter-word;">
+				We are excited to announce that QroChess will be integrating the new Stockfish AI into our game! This means that you can now play against one of the strongest open-source chess engines in the world. Stockfish AI is known for its ruthlessly aggressive playstyle and has been used by many top chess players in the world. With this integration, you can now experience the same level of play as these top players. QroChess is a game that is designed to be both fun and challenging. With our new Stockfish AI integration, we believe that we have taken this game to the next level.
+			</p><br>
+
+			<h3>New Game</h3><br>
+
+			<div class="botstatus" onclick="window.location.href = 'classicplay.html'">
+				<h2>Classic mode</h2>
+				Play QroChess with the classic AI (Chess.js)
+			</div>
+			<br>
+			<div class="botstatus" onclick="window.location.href = 'play.html'">
+					<h2>Enhanced mode</h2>
+					Play QroChess with the newly improved AI (Stockfish.js)
+			</div><br>
+
+			<h3>Community</h3><br>
+
+			<div>
+				Loading...
+				<script src="http://js-kit.com/comments.js"></script>
+			</div>
 		</div>
 	</div>
 </body>
