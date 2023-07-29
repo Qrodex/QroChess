@@ -5,7 +5,7 @@ var placesound = new Audio('move-self.mp3')
 var captureSound = new Audio('capture.mp3')
 var illegalMoveSound = new Audio('illegal-move.mp3')
 var engine = new Worker('stockfish.js')
-var time = { wtime: 300, btime: 300, winc: 10, binc: 10 };
+var time = { wtime: 4000, btime: 4000, winc: 400, binc: 400 };
 
 function uciCmd(cmd) {
     engine.postMessage(cmd);
@@ -47,7 +47,7 @@ engine.onmessage = function(event) {
 
         uciCmd('setoption name Contempt Factor value 0');
         uciCmd('setoption name Skill Level value 20');
-        uciCmd('setoption name Aggressiveness value 100');
+        uciCmd('setoption name Aggressiveness value 200');
     }
 };
 
