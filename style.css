@@ -46,6 +46,7 @@ html {
     background: #1d1d1ddd;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    padding: 20px;
 }
 .homeMenu {
     width: calc(100vw - 300px - 50px);
@@ -200,6 +201,7 @@ details {
     margin-left: 300px;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    padding: 20px;
 }
 .centersection {
     place-items: center;
