@@ -35,6 +35,7 @@ html {
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
+    border: #3d3d3d solid 1px;
 }
 
 .chessTable {
