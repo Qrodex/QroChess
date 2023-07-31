@@ -92,7 +92,7 @@ html {
     margin-bottom: 5px;
 }
 
-details {
+details, .qroui-button {
     background: #3d3d3d;
     padding: 15px;
     border-radius: 5px;
