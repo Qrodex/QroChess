@@ -1,7 +1,7 @@
-var hour = 00;
-var minute = 00;
-var second = 00;
-var count = 00;
+var hour = 0;
+var minute = 0;
+var second = 0;
+var count = 0;
 
 function stopWatch() {
     if (timer) {
