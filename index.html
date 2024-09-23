@@ -5,18 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="generator" content="RocketCake">
+
 	<title>QroChess</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<link rel="stylesheet" type="text/css" href="woff2/fonts.css">
-	<link rel="icon" type="image/x-icon" href="Qrochess-icon.png">
+	<link rel="icon" type="image/x-icon" href="assets/Qrochess-icon.png">
 	<link rel="manifest" href="manifest.json">
 
 	<script src="https://kit.fontawesome.com/970a0290cd.js" crossorigin="anonymous"></script>
-	<script src="jquery.min.js"></script>
-	<script src="chess.js"></script>
-	<script src="confetti.js"></script>
-	<link rel="stylesheet" href="chessboard.css">
-	<script src="chessboard-1.0.0.min.js"></script>
 </head>
 
 <body>
@@ -25,27 +22,18 @@
 			<i class="fa fa-home"></i>
 		</button>
 
-		<button title="Play Chess" onclick="window.location.href = 'mode.html'">
+		<button title="Play Chess" onclick="window.location.href = 'html/mode.html'">
 			<i class="fa-solid fa-chess-knight"></i>
 		</button>
 
-		<button title="Learn" onclick="window.location.href = 'tutorial.html'">
+		<button title="Learn" onclick="window.location.href = 'html/tutorial.html'">
 			<i class="fa-solid fa-book"></i>
 		</button>
-
-		<!-- <button title="Game Archive">
-			<i class="fa-solid fa-building-columns"></i>
-		</button> -->
 
 		<hr>
 
 		<button onclick="window.location.href = 'https://github.com/qrodex'" title="Qrodex Github">
 			<i class="fa fa-github"></i>
-		</button>
-
-		<button onclick="stopConfetti(); this.style.display = 'none'" title="Stop Confetti" id="stopConfetti"
-			style="display: none;">
-			<i class="fa fa-stop"></i>
 		</button>
 	</div>
 	<div class="mainContent">
@@ -64,34 +52,35 @@
 				<br>
 				<b>QroChess + Stockfish = Ultimate Experience</b>
 				<p style="text-align: justify; text-justify: inter-word;">
-					We are excited to announce that QroChess will be integrating the new Stockfish AI into our game! This means that you can now play against one of the strongest open-source chess engines in the world. Stockfish AI is known for its ruthlessly aggressive playstyle and has been used by many top chess players in the world. With this integration, you can now experience the same level of play as these top players. QroChess is a game that is designed to be both fun and challenging. With our new Stockfish AI integration, we believe that we have taken this game to the next level.
+					We are excited to announce that QroChess will be integrating the new Stockfish AI into our game!
+					This means that you can now play against one of the strongest open-source chess engines in the
+					world. Stockfish AI is known for its ruthlessly aggressive playstyle and has been used by many top
+					chess players in the world. With this integration, you can now experience the same level of play as
+					these top players. QroChess is a game that is designed to be both fun and challenging. With our new
+					Stockfish AI integration, we believe that we have taken this game to the next level.
 				</p><br>
 
 				<b>Unleashing QroUI for QroChess</b>
 				<p style="text-align: justify; text-justify: inter-word;">
-					Today, we are thrilled to unveil the much-anticipated redesign of the QroChess website, representing a significant leap forward in our commitment to providing the ultimate chess experience for all of our users. Our team has been hard at work, crafting a fresh and immersive online platform that will elevate your chess journey to new heights.
+					Today, we are thrilled to unveil the much-anticipated redesign of the QroChess website, representing
+					a significant leap forward in our commitment to providing the ultimate chess experience for all of
+					our users. Our team has been hard at work, crafting a fresh and immersive online platform that will
+					elevate your chess journey to new heights.
 					<br><br>
-					The new QroChess website boasts a range of exciting features and improvements, all designed with you in mind:
+					The new QroChess website boasts a range of exciting features and improvements, all designed with you
+					in mind:
 					<br>
-					<ul style="padding-left: 20px;padding-right: 20px;">
-						<li>
-							<b>Sleek and Modern Design:</b> Immerse yourself in a visually stunning and user-friendly interface that enhances your overall browsing experience.
-						</li>
-						<li>
-							<b>Streamlined Navigation:</b> Finding your way around the website has never been easier! Our intuitive menu system ensures you can effortlessly locate the features you desire.
-						</li>
-					</ul>
+				<ul style="padding-left: 20px;padding-right: 20px;">
+					<li>
+						<b>Sleek and Modern Design:</b> Immerse yourself in a visually stunning and user-friendly
+						interface that enhances your overall browsing experience.
+					</li>
+					<li>
+						<b>Streamlined Navigation:</b> Finding your way around the website has never been easier! Our
+						intuitive menu system ensures you can effortlessly locate the features you desire.
+					</li>
+				</ul>
 				</p>
-			</details>
-
-			<br>
-
-			<details id="logDiv">
-				<summary>Friends</summary>
-
-				<br>
-
-				<span>Sadly, you do not have any friends. Thanks for coming!</span>
 			</details>
 
 			<br>
@@ -100,17 +89,23 @@
 				<summary>FIDE Leaderboard</summary>
 				<br>
 				<div class="leaderboardStats">
-					<img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png" width="50">
+					<img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png"
+						width="50">
 					<div class="statsBio">
-						<span><div class="label-gm">GM</div>&nbsp;A Person</span>
+						<span>
+							<div class="label-gm">GM</div>&nbsp;A Person
+						</span>
 						<br>
 						<span class="elo-rating">FIDE ELO: 2859</span>
 					</div>
 				</div>
 				<div class="leaderboardStats">
-					<img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png" width="50">
+					<img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png"
+						width="50">
 					<div class="statsBio">
-						<span><div class="label-gm">GM</div>&nbsp;A Kid</span>
+						<span>
+							<div class="label-gm">GM</div>&nbsp;A Kid
+						</span>
 						<br>
 						<span class="elo-rating">FIDE ELO: 2811</span>
 					</div>
@@ -123,28 +118,41 @@
 
 			<b>QroChess + Stockfish = Ultimate Experience</b>
 			<p style="text-align: justify; text-justify: inter-word;">
-				We are excited to announce that QroChess will be integrating the new Stockfish AI into our game! This means that you can now play against one of the strongest open-source chess engines in the world. Stockfish AI is known for its ruthlessly aggressive playstyle and has been used by many top chess players in the world. With this integration, you can now experience the same level of play as these top players. QroChess is a game that is designed to be both fun and challenging. With our new Stockfish AI integration, we believe that we have taken this game to the next level.
+				We are excited to announce that QroChess will be integrating the new Stockfish AI into our game! This
+				means that you can now play against one of the strongest open-source chess engines in the world.
+				Stockfish AI is known for its ruthlessly aggressive playstyle and has been used by many top chess
+				players in the world. With this integration, you can now experience the same level of play as these top
+				players. QroChess is a game that is designed to be both fun and challenging. With our new Stockfish AI
+				integration, we believe that we have taken this game to the next level.
 			</p><br>
 
 			<b>Unleashing QroUI for QroChess</b>
 			<p style="text-align: justify; text-justify: inter-word;">
-				Today, we are thrilled to unveil the much-anticipated redesign of the QroChess website, representing a significant leap forward in our commitment to providing the ultimate chess experience for all of our users. Our team has been hard at work, crafting a fresh and immersive online platform that will elevate your chess journey to new heights.
+				Today, we are thrilled to unveil the much-anticipated redesign of the QroChess website, representing a
+				significant leap forward in our commitment to providing the ultimate chess experience for all of our
+				users. Our team has been hard at work, crafting a fresh and immersive online platform that will elevate
+				your chess journey to new heights.
 				<br><br>
-				The new QroChess website boasts a range of exciting features and improvements, all designed with you in mind:
+				The new QroChess website boasts a range of exciting features and improvements, all designed with you in
+				mind:
 				<br>
-				<ul style="padding-left: 20px;padding-right: 20px;">
-					<li>
-						<b>Sleek and Modern Design:</b> Immerse yourself in a visually stunning and user-friendly interface that enhances your overall browsing experience.
-					</li>
-					<li>
-						<b>Streamlined Navigation:</b> Finding your way around the website has never been easier! Our intuitive menu system ensures you can effortlessly locate the features you desire.
-					</li>
-				</ul>
+			<ul style="padding-left: 20px;padding-right: 20px;">
+				<li>
+					<b>Sleek and Modern Design:</b> Immerse yourself in a visually stunning and user-friendly interface
+					that enhances your overall browsing experience.
+				</li>
+				<li>
+					<b>Streamlined Navigation:</b> Finding your way around the website has never been easier! Our
+					intuitive menu system ensures you can effortlessly locate the features you desire.
+				</li>
+			</ul>
 			</p><br>
 
 			<b>QroChess repo has transferred here.</b>
 			<p style="text-align: justify; text-justify: inter-word;">
-				We are thrilled to announce a significant milestone in our journey as we present the evolution of our beloved repository, QroChess-Classic. Today, we proudly unveil our new identity and rebrand ourselves as "QroChess" - a name that reflects our commitment to delivering the finest chess experience to all users.
+				We are thrilled to announce a significant milestone in our journey as we present the evolution of our
+				beloved repository, QroChess-Classic. Today, we proudly unveil our new identity and rebrand ourselves as
+				"QroChess" - a name that reflects our commitment to delivering the finest chess experience to all users.
 			</p>
 		</div>
 	</div>

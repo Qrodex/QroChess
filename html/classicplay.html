@@ -5,23 +5,25 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="generator" content="RocketCake">
+
 	<title>QroChess</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="woff2/fonts.css">
-	<link rel="icon" type="image/x-icon" href="Qrochess-icon.png">
-	<link rel="manifest" href="manifest.json">
+
+	<link rel="stylesheet" type="text/css" href="../assets/style.css">
+	<link rel="stylesheet" type="text/css" href="../woff2/fonts.css">
+	<link rel="icon" type="image/x-icon" href="../assets/Qrochess-icon.png">
+	<link rel="manifest" href="../manifest.json">
+	<link rel="stylesheet" href="../assets/chessboard.css">
 
 	<script src="https://kit.fontawesome.com/970a0290cd.js" crossorigin="anonymous"></script>
-	<script src="jquery.min.js"></script>
-	<script src="chess.js"></script>
-	<script src="confetti.js"></script>
-	<link rel="stylesheet" href="chessboard.css">
-	<script src="chessboard-1.0.0.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/chess.js"></script>
+	<script src="../js/confetti.js"></script>
+	<script src="../js/chessboard-1.0.0.min.js"></script>
 </head>
 
 <body>
 	<div class="sidebarNavigation">
-		<button title="Home" onclick="window.location.href = 'index.html'">
+		<button title="Home" onclick="window.location.href = '../index.html'">
 			<i class="fa fa-home"></i>
 		</button>
 
@@ -40,7 +42,7 @@
 		<hr>
 
 		<button onclick="window.location.reload()" title="Restart Game">
-			<i class="fa fa-refresh"></i>
+			<i class="fa-solid fa-flag"></i>
 		</button>
 
 		<button onclick="window.location.href = 'https://github.com/qrodex'" title="Qrodex Github">
@@ -54,7 +56,7 @@
 	</div>
 	<div class="mainContent">
 		<div class="gameInfo">
-			<img src="rc_images/qrochess-logo.svg" class="qrodexIcon">
+			<img src="../rc_images/qrochess-logo.svg" class="qrodexIcon">
 
 			<br><br>
 
@@ -83,38 +85,22 @@
 			<details open>
 				<summary>About</summary>
 				<br>
-
-				Bot status: <span id="status">Starting...</span>
-
-				<br><br>
-
-				Played by Stockfish AI
-				QroChess v1.0
+				Played by Chess.js AI
+				QroChess v1.1
 
 				<br><br>
 
-				&copy; 2023 Qrodex
+				&copy; 2024 Qrodex
 				<br>Unleash The Venom
 			</details>
-
-			<br>
 		</div>
 		<div class="chessTable">
 			<div id="Board" style="width: 40vw; margin: auto; border-radius: 9px;"></div>
 		</div>
-		<div class="aiBootDialog">
-			<div style="text-align: center;">
-				<h1><i class="fa-solid fa-gear fa-spin"></i></h1>
-
-				<br>
-
-    			Starting stockfish...
-			</div>
-		</div>
 	</div>
 </body>
 
-<script src="game.js" defer></script>
-<script src="timer.js" defer></script>
+<script src="../js/classicgame.js" defer></script>
+<script src="../js/timer.js" defer></script>
 
 </html>

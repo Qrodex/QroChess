@@ -5,23 +5,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="generator" content="RocketCake">
+
 	<title>QroChess</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="woff2/fonts.css">
-	<link rel="icon" type="image/x-icon" href="Qrochess-icon.png">
-	<link rel="manifest" href="manifest.json">
+
+	<link rel="stylesheet" type="text/css" href="../assets/style.css">
+	<link rel="stylesheet" type="text/css" href="../woff2/fonts.css">
+	<link rel="icon" type="image/x-icon" href="../assets/Qrochess-icon.png">
+	<link rel="manifest" href="../manifest.json">
 
 	<script src="https://kit.fontawesome.com/970a0290cd.js" crossorigin="anonymous"></script>
-	<script src="jquery.min.js"></script>
-	<script src="chess.js"></script>
-	<script src="confetti.js"></script>
-	<link rel="stylesheet" href="chessboard.css">
-	<script src="chessboard-1.0.0.min.js"></script>
 </head>
 
 <body>
 	<div class="sidebarNavigation">
-		<button title="Home" onclick="window.location.href = 'index.html'">
+		<button title="Home" onclick="window.location.href = '../index.html'">
 			<i class="fa fa-home"></i>
 		</button>
 
@@ -42,15 +39,10 @@
 		<button onclick="window.location.href = 'https://github.com/qrodex'" title="Qrodex Github">
 			<i class="fa fa-github"></i>
 		</button>
-
-		<button onclick="stopConfetti(); this.style.display = 'none'" title="Stop Confetti" id="stopConfetti"
-			style="display: none;">
-			<i class="fa fa-stop"></i>
-		</button>
 	</div>
 	<div class="mainContent">
 		<div class="gameInfo">
-			<img src="rc_images/qrochess-logo.svg" class="qrodexIcon">
+			<img src="../rc_images/qrochess-logo.svg" class="qrodexIcon">
 
 			<br><br>
 
@@ -64,31 +56,27 @@
 
 			<br>
 
-			<details id="logDiv">
-				<summary>Friends</summary>
-
-				<br>
-
-				<span>Sadly, you do not have any friends. Thanks for coming!</span>
-			</details>
-
-			<br>
-
 			<details>
 				<summary>FIDE Leaderboard</summary>
 				<br>
 				<div class="leaderboardStats">
-					<img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png" width="50">
+					<img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png"
+						width="50">
 					<div class="statsBio">
-						<span><div class="label-gm">GM</div>&nbsp;A Person</span>
+						<span>
+							<div class="label-gm">GM</div>&nbsp;A Person
+						</span>
 						<br>
 						<span class="elo-rating">FIDE ELO: 2859</span>
 					</div>
 				</div>
 				<div class="leaderboardStats">
-					<img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png" width="50">
+					<img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png"
+						width="50">
 					<div class="statsBio">
-						<span><div class="label-gm">GM</div>&nbsp;A Kid</span>
+						<span>
+							<div class="label-gm">GM</div>&nbsp;A Kid
+						</span>
 						<br>
 						<span class="elo-rating">FIDE ELO: 2811</span>
 					</div>
@@ -102,15 +90,22 @@
 				<br>
 
 				<div class="botstatus" onclick="window.location.href = 'classicplay.html'">
-					<h2>Classic mode</h2>
+					<h2>Classic game</h2>
 					Play QroChess with the classic AI (Chess.js)
 				</div>
 
 				<br>
 
 				<div class="botstatus" onclick="window.location.href = 'play.html'">
-					<h2>Enhanced mode</h2>
+					<h2>Enhanced game</h2>
 					Play QroChess with the newly improved AI (Stockfish.js)
+				</div>
+
+				<br>
+
+				<div class="botstatus" onclick="window.location.href = 'multiplayer.html'">
+					<h2>Multiplayer game (Experimental)</h2>
+					Play QroChess with your friends
 				</div>
 			</div>
 		</div>

@@ -1,9 +1,9 @@
 var board = null
 var game = new Chess()
 var log = document.getElementById('logDiv')
-var placesound = new Audio('move-self.mp3')
-var captureSound = new Audio('capture.mp3')
-var illegalMoveSound = new Audio('illegal-move.mp3')
+var placesound = new Audio('../assets/move-self.mp3')
+var captureSound = new Audio('../assets/capture.mp3')
+var illegalMoveSound = new Audio('../assets/illegal-move.mp3')
 
 function createLog(message) {
     let text = document.createElement('p');

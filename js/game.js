@@ -1,10 +1,10 @@
 var board = null
 var game = new Chess()
 var log = document.getElementById('logDiv')
-var placesound = new Audio('move-self.mp3')
-var captureSound = new Audio('capture.mp3')
-var illegalMoveSound = new Audio('illegal-move.mp3')
-var engine = new Worker('stockfish.js')
+var placesound = new Audio('../assets/move-self.mp3')
+var captureSound = new Audio('../assets/capture.mp3')
+var illegalMoveSound = new Audio('../assets/illegal-move.mp3')
+var engine = new Worker('../js/stockfish.js')
 var time = { wtime: 4000, btime: 4000, winc: 400, binc: 400 };
 
 function uciCmd(cmd) {
@@ -52,7 +52,7 @@ engine.onmessage = function(event) {
 };
 
 var bookRequest = new XMLHttpRequest();
-bookRequest.open('GET', 'book.bin', true);
+bookRequest.open('GET', '../assets/book.bin', true);
 bookRequest.responseType = "arraybuffer";
 bookRequest.onload = function(event) {
     if(bookRequest.status == 200) {

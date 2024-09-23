@@ -3,7 +3,12 @@
   "short_name": "QroChess",
   "icons": [
     {
-      "src": "Qrochess-icon.png",
+      "src": "../assets/Qrochess-icon.png",
+      "sizes": "397x397",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/Qrochess-icon.png",
       "sizes": "397x397",
       "type": "image/png"
     }
