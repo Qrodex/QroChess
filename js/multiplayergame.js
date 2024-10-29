@@ -66,8 +66,14 @@ function onDrop(source, target) {
     } else {
         placesound.play();
     }
+
+    var turn = "White"
+    if (game.turn() == "b") {
+        turn = "Black"
+    }
+
     if (game.in_checkmate()) {
-        alert("Checkmate!");
+        alert(turn + " checkmate!");
         startConfetti();
         document.getElementById('stopConfetti').style.display = "block";
         timer = false;

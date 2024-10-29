@@ -28,9 +28,15 @@ engine.onmessage = function(event) {
         }
 
         document.getElementById('status').innerText = 'Ready';
+        makeRandomMove()
 
+        var turn = "White"
+        if (game.turn() == "b") {
+            turn = "Black"
+        }
+    
         if (game.in_checkmate()) {
-            alert("Checkmate!");
+            alert(turn + " checkmate!");
             startConfetti();
             document.getElementById('stopConfetti').style.display = "block";
             timer = false;
@@ -120,8 +126,13 @@ function onDrop(source, target) {
         placesound.play()
     }
 
+    var turn = "White"
+    if (game.turn() == "b") {
+        turn = "Black"
+    }
+
     if (game.in_checkmate()) {
-        alert("Checkmate!");
+        alert(turn + " checkmate!");
         startConfetti();
         document.getElementById('stopConfetti').style.display = "block";
         timer = false;
