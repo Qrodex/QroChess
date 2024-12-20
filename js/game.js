@@ -28,7 +28,6 @@ engine.onmessage = function(event) {
         }
 
         document.getElementById('status').innerText = 'Ready';
-        makeRandomMove()
 
         var turn = "White"
         if (game.turn() == "b") {
